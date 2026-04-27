@@ -1,0 +1,58 @@
+/* More specific selectors to override Bootstrap */
+#emails-view .mail {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: white; /* Default for unread */
+}
+
+#emails-view .mail:hover {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Unread emails - white background */
+#emails-view .mail:not(.read) {
+    background-color: #ffffff;
+    border-left: 4px solid #007bff;
+    font-weight: 600;
+}
+
+/* Read emails - gray background */
+#emails-view .mail.read {
+    background-color: #f0f0f0;
+    border-left: 4px solid #6c757d;
+    font-weight: normal;
+}
+
+/* Email sender styling */
+#emails-view .mail-sender {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Email subject styling */
+#emails-view .mail-subject {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Email timestamp styling */
+#emails-view .mail-timestamp {
+    font-size: 12px;
+    color: #888;
+}
+
+/* No emails message */
+#emails-view .no-emails {
+    text-align: center;
+    color: #888;
+    padding: 40px;
+    font-style: italic;
+}
